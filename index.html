@@ -47,7 +47,7 @@
       margin-bottom: 40px;
     }
 
-    iframe, video {
+    iframe {
       width: 100%;
       height: 100%;
       border: none;
@@ -62,11 +62,21 @@
       margin-bottom: 60px;
     }
 
-    .screenshots img {
-      width: 100%;
+    .screenshot {
+      text-align: center;
       max-width: 380px;
+    }
+
+    .screenshot img {
+      width: 100%;
       border-radius: 10px;
       border: 2px solid #333;
+    }
+
+    .screenshot-caption {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #ccc;
     }
 
     footer {
@@ -78,12 +88,26 @@
 </head>
 <body>
   <header>
-    <h1>My Game: AS4 Racing Game</h1>
+    <h1>My Game: Project Echo</h1>
     <p>
       A game developed in my Game Engine Architecture class. Built from scratch using C++ and a version of the raylib-cpp library. This game is from AS4 where we were tasked with creating a custom AD Hoc Game where I chose to make a game similar to Mario Kart. Initially I wanted the cars to detect the plane/surface they were driving on to determine the speed effects given to the respective car (speed boosts/speed reduction) depending on the object/color ran into. Instead, I made it so the vehicles detect collision with a tire (speed boost) or a cone (speed reduction) to make the game a little more interesting.
     </p>
   </header>
 
+  <div class="game-container">
+    <iframe src="https://www.youtube.com/embed/Y_Dl6Zp1dNE" allowfullscreen></iframe>
+  </div>
+
+  <div class="screenshots">
+    <div class="screenshot">
+      <img src="asciiArt.jpg" alt="ASCII art from game" />
+      <div class="screenshot-caption">ASCII art from game</div>
+    </div>
+    <div class="screenshot">
+      <img src="codePicture.jpg" alt="Code example" />
+      <div class="screenshot-caption">Code example</div>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Bohdi. Class project for CS381.
